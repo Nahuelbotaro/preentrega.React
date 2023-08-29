@@ -1,0 +1,87 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.footer{
+    padding: 30px 40px;
+    width: 100%;
+    background-color: rgb(248, 242, 242);
+}
+.footer .container{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .container .about{
+    max-width: 30%;
+}
+.footer .container .about .detail{
+    margin-top: 20px;
+    font-size: 16px;
+    color: black;
+}
+.footer .container .about .detail .icono{
+    margin-top: 20px;
+    display: flex;
+}
+.footer .container .about .detail .icono li{
+    margin-left: 20px;
+    list-style: none;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .container .about .detail .icono li:hover{
+    background-color:  #f391a2;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.footer .container .cuenta{
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.footer .container .cuenta h3{
+    font-size: 32px;
+    color: black;
+}
+.footer .container .cuenta ul{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.footer .container .cuenta ul li{
+    margin-top: 5px;
+    color: black;
+    font-size: 14px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.footer .container .pagina ul li:hover{
+    color: #f57086;
+}
+.footer .container .pagina{
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.footer .container .pagina h3{
+    font-size: 32px;
+    color: black;
+}
+.footer .container .pagina ul{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.footer .container .pagina ul li{
+    margin-top: 5px;
+    color: black;
+    font-size: 14px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.footer .container .pagina ul li:hover{
+    color: #f57086;
+}

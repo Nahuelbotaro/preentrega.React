@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaTruckMoving } from 'react-icons/fa';
 import { AiOutlineHeart } from 'react-icons/ai';
+import { BsBagCheck } from 'react-icons/bs';
 import {AiOutlineUser } from 'react-icons/ai';
+import { CiLogin } from 'react-icons/ci';
+import { CiLogout} from 'react-icons/ci';
+
 import { Link } from 'react-router-dom';
-import CartWidget from './CartWidget/CartWidget';
 import './nav.css'
-const Nav = () => {
+const Nav = ({searchbtn}) => {
+    const [search, setSearch] = useState('')
   return (
     <>
     <div className='free'>
@@ -21,8 +25,8 @@ const Nav = () => {
                 <img className='imagen-logo' src='./img/logo.svg.png' alt='logo'></img>
             </div>
             <div className='search-box'>
-                <input type='text' value='' placeholder='Buscar productos...'></input>
-                <button>Buscar</button>
+                <input type='text' value={search} placeholder='Buscar productos...' autoComplete='off' onChange={(e)=> setSearch(e.target.value)}></input>
+                <button onClick={()=> searchbtn(search)}>Buscar</button>
             </div>
             <div className='icono'>
                 <div className='cuenta'>
@@ -33,6 +37,7 @@ const Nav = () => {
                 </div>
                 <div className='segundo-icono'>
                     <Link to="/" className='link'><AiOutlineHeart /></Link>
+                    <Link to="/cart" className='link'><BsBagCheck/></Link>
                 </div>
             </div>
         </div>
@@ -55,8 +60,12 @@ const Nav = () => {
                     <Link to='/contacto'className='link'>Contactanos</Link>
                 </li>
                </ul>
-            </div>
-            <CartWidget/>
+            </div> 
+            <div className='auth'>
+                <button><CiLogin /> </button>
+                <button><CiLogout/> </button>
+             </div>
+
         
         </div>
     

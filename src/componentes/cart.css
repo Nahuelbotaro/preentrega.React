@@ -1,0 +1,32 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.cart-container{
+    padding: 40px 50px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #050505 ;
+}
+.cart-container .carrito-vacio{
+    margin-top: 30px;
+    margin-left: 40%;
+
+}
+.cart-container .carrito-vacio .vacio{
+    font-size: 30px;
+    color: #050505;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.cart-container .carrito-vacio .boton-carrito{
+    margin-left: 100px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #050505;
+}
