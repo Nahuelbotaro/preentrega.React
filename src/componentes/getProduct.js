@@ -1,4 +1,4 @@
-const Productdetail=
+const product=
 [
     {
         id:1,
@@ -85,4 +85,12 @@ const Productdetail=
         Img:'./img/tostado.jpeg'
     },
 ]
-export default Productdetail
+const getList = () =>{
+    return new Promise((resolve, reject) =>{
+      setTimeout(()=>{
+        resolve(product);
+      })
+    }, 2000);
+  }
+
+export default getList

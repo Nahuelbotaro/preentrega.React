@@ -195,6 +195,22 @@
     letter-spacing: 1px;
 
 }
+.producto .container .box .detail .button{
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: #e77575;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    margin-left: 80%;
+    font-size: 15px;
+    color:white;
+   background-color: #e77575;
+}
+.producto-detail .container .product-box .detail button:hover{
+    background-color: #3aac0d;
+}
+
 .banner{
     padding: 20px 30px;
     width: 100%;
@@ -307,16 +323,17 @@
     letter-spacing: 1px;
 }
 .producto-detail .container .product-box .detail button{
-    margin-top: 30px;
-    padding: 20px 40px;
-    font-size: 16px;
-    color: black;
-    background: white;
-    transition: 0.5s;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: #e77575;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    margin-left: 80%;
+    font-size: 15px;
+    color:white;
+   background-color: #e77575;
 }
 .producto-detail .container .product-box .detail button:hover{
-    background: #e77575;
+    background-color: #3aac0d;
 }

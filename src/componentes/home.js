@@ -14,7 +14,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import HomeProducto from './homeproducto';
 import './home.css'
 
-const Home = ({ detail, view, close, setClose }) => {
+const Home = ({ detail, close, setClose }) => {
     return (
         <>
             {
@@ -33,7 +33,7 @@ const Home = ({ detail, view, close, setClose }) => {
                                                 <h4>{curElm.Cat}</h4>
                                                 <h2>{curElm.titulo}</h2>
                                                 <h3>{curElm.precio}</h3>
-                                                <button>Agregar al carrito</button>
+                                               
                                             </div>
                                         </div>
                                     )
@@ -138,7 +138,7 @@ const Home = ({ detail, view, close, setClose }) => {
                                         <img className='img' src={curElm.Img} alt={curElm.titulo}></img>
                                         <div className='icono'>
                                             <li><AiOutlineShoppingCart /></li>
-                                            <li onClick={() => view(curElm)}><AiOutlineEye /></li>
+                                            <li><AiOutlineEye /></li>
                                             <li><AiOutlineHeart /></li>
                                         </div>
                                     </div>
