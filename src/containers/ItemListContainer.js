@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from 'react' 
-import getList from '../componentes/getProduct'
+/* import getList from '../componentes/getProduct' */
 import ItemList from '../componentes/ItemList'
 
 const ItemListContainer = () => {
   const [arrayList, setArrayList] = useState([])
   
   useEffect(() =>{
-    getList()
-      .then((response) => setArrayList(response))
-      .catch((err) => console.error(err))
-      .finally()
+    fetch('productos.json')
+    .then((resp) => resp.json())
+
+    .then((data) => setArrayList(data))
+    .catch((err) => console.error(err))
+  
   },[])
  
 
   return (
     <div className='listcontainer'>
-       <ItemList productos={arrayList}/>
+       <ItemList products={arrayList}/>
       
     </div>
   )

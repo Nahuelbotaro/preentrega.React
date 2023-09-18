@@ -114,7 +114,7 @@
     color: #070505;
     transition: 0.5s;
 }
-.productos .container .productbox .contant .box .detail button{
+.productos .container .productbox .contant .box .detail button {
     text-decoration: none;
     border-radius: 5px;
     border-color: #e77575;
@@ -127,6 +127,7 @@
    background-color: #e77575;
 
 }
+
 .productos .container .productbox .contant .box .detail button:hover{
     background-color: #3aac0d;
 }
