@@ -56,22 +56,22 @@ const Nav = ({ searchbtn }) => {
                             </li>
 
                             <li>
-                                <Link to='/productos/alfajores' className='link'>Alfajores</Link>
+                                <Link to='/productos/Alfajores' className='link'>Alfajores</Link>
                             </li>
                             <li>
-                                <Link to='/productos/cafe' className='link'>Cafe</Link>
+                                <Link to='/productos/Cafe' className='link'>Cafe</Link>
                             </li>
                             <li>
                                 <Link to='/productos/Cookies' className='link'>Cookies</Link>
                             </li>
                             <li>
-                                <Link to='/productos/cupcakes' className='link'>Cupcakes</Link>
+                                <Link to='/productos/Cupcakes' className='link'>Cupcakes</Link>
                             </li>
                             <li>
-                                <Link to='/productos/tartas' className='link'>Tartas</Link>
+                                <Link to='/productos/Tartas' className='link'>Tartas</Link>
                             </li>
                             <li>
-                                <Link to='/productos/tortas' className='link'>Tortas</Link>
+                                <Link to='/productos/Tortas' className='link'>Tortas</Link>
                             </li>
 
 

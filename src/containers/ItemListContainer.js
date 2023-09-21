@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react' 
 import ItemList from '../componentes/ItemList'
+import { useParams } from 'react-router-dom'
 import { collection, getDocs, query, where} from "firebase/firestore"
 import { db } from "../Firebase/config"
-import { useParams } from 'react-router-dom'
+
+
 
 const ItemListContainer = () => {
   const [array, setArray] = useState([])
@@ -15,7 +17,7 @@ const ItemListContainer = () => {
    
   const productosRef = collection(db, "productos"); 
 
-    const q = query (productosRef, where("categoria", "==", categoria));
+    const q = categoria ? query (productosRef, where("categoria", "==", categoria)) : productosRef;
 
     getDocs(q)
       .then ((resp) =>{

@@ -11,6 +11,7 @@ import Contacto from './componentes/contacto';
 import './componentes/cart.css'
 import { CartProvider } from './context/CartContext';
 import Carrito from './componentes/Carrito';
+import Checkout from './componentes/Checkout';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             <Route path='/galeria' element={<Galeria />} />
             <Route path='/contacto' element={<Contacto />} />
             <Route path='/carrito' element={<Carrito />} />
+            <Route path='/checkout' element={<Checkout/>} />
           </Routes>
 
 
