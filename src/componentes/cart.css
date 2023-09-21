@@ -1,32 +1,36 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
+.item-count {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
-.cart-container{
-    padding: 40px 50px;
-    width: 100%;
-    background: white;
-    border-bottom: 1px solid #050505 ;
-}
-.cart-container .carrito-vacio{
-    margin-top: 30px;
-    margin-left: 40%;
 
+.item-count button, .carrito, .enviar {
+    background-color: white;
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    color: black;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    border: 2px solid rgb(236, 89, 113);
+    transition: .2s;
 }
-.cart-container .carrito-vacio .vacio{
-    font-size: 30px;
-    color: #050505;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin-bottom: 30px;
+
+.item-count button:hover, .carrito:hover, .enviar:hover {
+    background-color:#e77575;
+    color: black;
 }
-.cart-container .carrito-vacio .boton-carrito{
-    margin-left: 100px;
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    background-color: #050505;
+
+.carrito, .enviar {
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem;
 }

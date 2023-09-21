@@ -114,7 +114,7 @@
     color: #070505;
     transition: 0.5s;
 }
-.productos .container .productbox .contant .box .detail button {
+.productos .container .productbox .contant .box .detail button{
     text-decoration: none;
     border-radius: 5px;
     border-color: #e77575;
@@ -128,9 +128,6 @@
 
 }
 
-.productos .container .productbox .contant .box .detail button:hover{
-    background-color: #3aac0d;
-}
 .productos .container .productbox .contant .box:hover .detail h3{
     color: rgb(226, 24, 92);
 }
@@ -142,14 +139,15 @@
 
 }
 .producto-detail{
-    margin-top: 30px;
-    padding: 30px 40px;
+    margin-top: 20px;
+    padding: 30px 50px;
     width: 100%;
     height: 120%;
     position: fixed;
     z-index: 1;
     margin-top: -16%;
     background: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(5px)
 }
 .producto-detail .container{
     margin-top: 5%;
@@ -157,16 +155,17 @@
     width: 1200px;
     height: 800px;
     background-color:#f8cbcb;
-    padding: 20px 30px;
+    padding: 50px 50px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .producto-detail .container .closebtn{
+    margin-top: -30px;
     margin-left: 100%;
     border:none;
     outline: none;
     background: none;
-    font-size: 25px;
+    font-size: 40px;
 }
 .producto-detail .container .product-box{
     max-width: 100%;
@@ -212,17 +211,5 @@
     font-size: 30px;
     letter-spacing: 1px;
 }
-.producto-detail .container .product-box .detail button{
-    margin-top: 30px;
-    padding: 20px 40px;
-    font-size: 16px;
-    color: black;
-    background: white;
-    transition: 0.5s;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.producto-detail .container .product-box .detail button:hover{
-    background: #e77575;
-}
+
+

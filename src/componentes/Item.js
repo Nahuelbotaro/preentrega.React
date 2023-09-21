@@ -31,7 +31,7 @@ const Item = ({ product }) => {
                                     <p>{product.Cat}</p>
                                     <h3>{product.titulo}</h3>
                                     <h4> Precio: {product.precio}</h4>
-                                    <button className='button'><Link to={`item/${product.id}`}>Ver Mas </Link> </button>
+                                    <button className='boton'><Link to={`/item/${product.id}`}>Ver Mas </Link> </button>
                                 </div>
                             </div>
 

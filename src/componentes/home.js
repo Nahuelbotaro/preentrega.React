@@ -8,7 +8,6 @@ import { BsHeadset } from 'react-icons/bs';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { AiOutlineEye } from 'react-icons/ai';
 import { AiOutlineHeart } from 'react-icons/ai';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 import HomeProducto from './homeproducto';
@@ -17,33 +16,6 @@ import './home.css'
 const Home = ({ detail, close, setClose }) => {
     return (
         <>
-            {
-                close ?
-                    <div className='producto-detail'>
-                        <div className='container'>
-                            <button onClick={() => setClose(false)} className='closebtn'><AiOutlineCloseCircle /></button>
-                            {
-                                detail.map((curElm) => {
-                                    return (
-                                        <div className='product-box'>
-                                            <div className='img-box'>
-                                                <img src={curElm.Img} alt={curElm.titulo}></img>
-                                            </div>
-                                            <div className='detail'>
-                                                <h4>{curElm.Cat}</h4>
-                                                <h2>{curElm.titulo}</h2>
-                                                <h3>{curElm.precio}</h3>
-                                               
-                                            </div>
-                                        </div>
-                                    )
-                                })
-
-                            }
-
-                        </div>
-                    </div> : null
-            }
             <div className='top_banner'>
                 <div className='container'>
                     <div className='detail'>
