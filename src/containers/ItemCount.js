@@ -1,5 +1,5 @@
 
-import './cart.css'
+import '../containers/cart.css'
 
 const ItemCount = ({ cantidad, handleRestar, handleSumar, handleAgregar }) => {
 

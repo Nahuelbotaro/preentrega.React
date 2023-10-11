@@ -1,17 +1,15 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
-import './carrito.css'
+import './/carrito.css'
 
 const Carrito = () => {
-    
-    const {carrito, precioTotal, vaciarCarrito} = useContext(CartContext)
+      const {carrito, precioTotal, vaciarCarrito} = useContext(CartContext)
 
     const handlVaciar= () =>{
         vaciarCarrito()
-    }
-
-  return (
+    }  
+return (
     <div className='cart-container'>
         <h1 className='titulo'>Carrito</h1>
         {
@@ -23,10 +21,9 @@ const Carrito = () => {
                      <p className='titulo-cantidad'>Cant :{prod.cantidad}</p>
                      <br/>
                 </div>
-              
-            ))
-        }
-
+            ))    
+        }   
+     
         {
             carrito.length > 0 ?
             <>
@@ -36,12 +33,15 @@ const Carrito = () => {
             </> :
             <h2 className='carrito vacio'>El carrito esta vacio</h2>
         }
-        
-       
+    
 
-
-    </div>
+    </div>    
   )
-}
+}       
+
+
+
 
 export default Carrito
+
+  

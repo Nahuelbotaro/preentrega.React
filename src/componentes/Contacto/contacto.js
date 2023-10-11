@@ -1,6 +1,6 @@
 import { useForm} from "react-hook-form";
 
-import './contacto.css'
+import './/contacto.css'
 
 const Contacto = () => {
   const {register, handleSubmit} = useForm();

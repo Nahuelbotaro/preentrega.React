@@ -7,14 +7,13 @@ import { CiLogin } from 'react-icons/ci';
 import { CiLogout } from 'react-icons/ci';
 
 import { Link } from 'react-router-dom';
-import './nav.css'
-import CartWidget from './CartWidget';
+import './/nav.css'
+import CartWidget from '../CartWidget/CartWidget';
 const Nav = ({ searchbtn }) => {
     const [search, setSearch] = useState('')
     return (
         <>
             <div className='free'>
-
                 <div className='icono'>
                     <FaTruckMoving />
                 </div>
@@ -42,7 +41,6 @@ const Nav = ({ searchbtn }) => {
                         </div>
                     </div>
                 </div>
-
             </div>
             <div className='header'>
                 <div className='container'>
@@ -88,14 +86,16 @@ const Nav = ({ searchbtn }) => {
                         <button><CiLogin /> </button>
                         <button><CiLogout /> </button>
                     </div>
-
-
                 </div>
-
             </div>
-
+  
         </>
     )
 }
+
+
+
+
+
 
 export default Nav

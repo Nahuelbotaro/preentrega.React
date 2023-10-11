@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
-
 export const CartContext = createContext();
+
 
 export const CartProvider =  ({children}) => {
 
@@ -25,8 +25,6 @@ export const CartProvider =  ({children}) => {
         }
         setCarrito(nuevoCarrito);
     }
-
-
 
   
     const cantidadEnCarrito = () => {
@@ -56,3 +54,4 @@ export const CartProvider =  ({children}) => {
     ) 
 
 }
+

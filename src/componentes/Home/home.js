@@ -13,7 +13,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import HomeProducto from './homeproducto';
 import './home.css'
 
-const Home = ({ detail, close, setClose }) => {
+const Home = () => {
     return (
         <>
             <div className='top_banner'>

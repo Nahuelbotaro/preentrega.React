@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { } from 'react'
 import { AiOutlineEye } from 'react-icons/ai';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { AiOutlineHeart } from 'react-icons/ai';
-import './product.css'
+import '../componentes/product.css'
 import { Link } from 'react-router-dom';
 
-const Item = ({ product }) => {
+const Item = ({ product, }) => {
+
 
 
 
@@ -31,7 +32,7 @@ const Item = ({ product }) => {
                                     <p>{product.Cat}</p>
                                     <h3>{product.titulo}</h3>
                                     <h4> Precio: {product.precio}</h4>
-                                    <button className='boton'><Link to={`/item/${product.id}`}>Ver Mas </Link> </button>
+                                    <Link className='btn-detalle' to={`/item/${product.id}`}>Ver Mas </Link>
                                 </div>
                             </div>
 

@@ -1,17 +1,17 @@
 
-import Nav from './componentes/nav'
-import Home from './componentes/home'
+import Nav from '../src/componentes/Navbar/nav'
+import Home from '../src/componentes/Home/home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Footer from './componentes/footer';
+import Footer from './componentes/Footer/footer';
 import './componentes/product.css'
-import ItemDetailContainer from './componentes/ItemDetailContainer';
+import ItemDetailContainer from '../src/containers/ItemDetailContainer';
 import ItemListContainer from './containers/ItemListContainer';
 import Galeria from './componentes/galeria';
-import Contacto from './componentes/contacto';
-import './componentes/cart.css'
-import { CartProvider } from './context/CartContext';
-import Carrito from './componentes/Carrito';
-import Checkout from './componentes/Checkout';
+import Contacto from '../src/componentes/Contacto/contacto';
+import '../src/containers/cart.css'
+import { CartProvider } from './componentes/context/CartContext';
+import Carrito from '../src/componentes/Carrito/Carrito';
+import Checkout from '../src/componentes/Checkout/Checkout';
 
 function App() {
 
@@ -30,20 +30,20 @@ function App() {
             <Route path='/carrito' element={<Carrito />} />
             <Route path='/checkout' element={<Checkout/>} />
           </Routes>
-
-
-          <Footer />
+         <Footer />
         </BrowserRouter>
       </CartProvider>
-
-
-
 
     </>
   )
 }
-
 export default App
+
+
+ 
+
+
+
 
 
 

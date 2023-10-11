@@ -2,18 +2,16 @@ import React, { useContext, useState } from 'react'
 import { CartContext } from '../context/CartContext'
 import { useForm } from 'react-hook-form';
 import {collection, addDoc} from "firebase/firestore"
-import {db} from '../Firebase/config'
-import './carrito.css'
+import {db} from '../../Firebase/config'
+import '../Carrito/carrito.css'
 
 const Checkout = () => {
-
-    const [pedidoId, setPedidoId] = useState("")
+   const [pedidoId, setPedidoId] = useState("")
 
     const {carrito, precioTotal, vaciarCarrito} = useContext(CartContext)
 
     const {register, handleSubmit} = useForm();
-
- const comprar = (data) =>{
+const comprar = (data) =>{
    const pedido = {
         cliente: data,
         productos: carrito,
@@ -28,8 +26,8 @@ const Checkout = () => {
         setPedidoId(doc.id);
         vaciarCarrito();
     })
-
-  }
+ 
+   }
   
     if(pedidoId){
         return (
@@ -39,7 +37,6 @@ const Checkout = () => {
             </div>
         )
     }
-
   return (
     <div className='contact-container'>
     <div className='contant'>
@@ -58,5 +55,7 @@ const Checkout = () => {
   </div>
   )
 }
-
 export default Checkout
+
+
+

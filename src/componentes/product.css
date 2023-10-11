@@ -114,15 +114,15 @@
     color: #070505;
     transition: 0.5s;
 }
-.productos .container .productbox .contant .box .detail button{
+.productos .container .productbox .contant .box .detail .btn-detalle{
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: #e77575;
     padding-left: 5px;
     padding-right: 5px;
     position: relative;
     margin-left: 80%;
-    font-size: 15px;
+    font-size: 16px;
     color:white;
    background-color: #e77575;
 
@@ -159,13 +159,21 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.producto-detail .container .closebtn{
-    margin-top: -30px;
-    margin-left: 100%;
-    border:none;
-    outline: none;
-    background: none;
-    font-size: 40px;
+.producto-detail .container .btn-cierre{
+    background-color:rgb(240, 179, 189);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 5px;
+    margin-left: 90%;
+    cursor: pointer;
+}
+.producto-detail .container .btn-cierre:hover{
+    background-color: #e77575;
 }
 .producto-detail .container .product-box{
     max-width: 100%;
@@ -212,4 +220,20 @@
     letter-spacing: 1px;
 }
 
+.producto-detail .container .product-box .btn-carrito{
+    background-color:rgb(240, 179, 189);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+
+}
+.producto-detail .container .product-box .btn-carrito:hover{
+    background-color: #e77575;
+}
 

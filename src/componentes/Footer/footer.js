@@ -3,7 +3,7 @@ import { BsFacebook} from 'react-icons/bs';
 import {BsInstagram } from 'react-icons/bs';
 import {BsWhatsapp} from 'react-icons/bs';
 import {FaPinterestP} from 'react-icons/fa';
-import './footer.css'
+import './/footer.css'
 
 const Footer = () => {
   return (
